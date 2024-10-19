@@ -1,12 +1,12 @@
 # Equipe
 
-* Davi AUgusto Dias Soares
+* Davi Augusto Dias Soares
 * Victor Lucas Tornelli
  
 * Orientador: Lesandro Ponciano
 
 # Tema
-O tema tratado na pesquisa é "Avaliação de técnicas de controle de qualidade no desenvolvimento de software utilizando metodologias ágeis"
+O tema tratado na pesquisa é _Avaliação de técnicas de controle de qualidade no desenvolvimento de software utilizando metodologias ágeis_
 
 # Problema
 O problema a ser resolvido na pesquisa é: 
