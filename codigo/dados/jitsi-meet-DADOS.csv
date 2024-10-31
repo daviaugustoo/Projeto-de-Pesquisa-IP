@@ -1,0 +1,104 @@
+sha,author,date,message
+7b4965f6b2a41ecde64b75e4389fe5608a29050c,Jaya Allamsetty,2024-10-30T21:36:30Z,"chore(deps) lib-jitsi-meet@latest
+
+https://github.com/jitsi/lib-jitsi-meet/compare/v1882.0.0+d51e5575...v1883.0.0+9eefac11"
+d78b980b353c3e8dfd6160ca4d4a9761766047b2,Saúl Ibarra Corretgé,2024-10-30T16:17:56Z,fix(android) fix bundle script path
+103d1d9f3506c9a59680770f67b4daf4253f4b88,Saúl Ibarra Corretgé,2024-10-30T15:26:00Z,fix(android) fix making production bundles
+6d3330a20802fbe62b8677de123a3eef9d3b98e0,Saúl Ibarra Corretgé,2024-10-30T13:30:22Z,"feat(lib-jitsi-meet) log UA string too
+
+This way we can know from the logs what we are working with."
+771f5af59dfac6f5f3504113e74abe83bc104c39,Saúl Ibarra Corretgé,2024-10-30T13:27:47Z,"feat(rn) improve UA string
+
+Add SDK version in addition to OS and RN versions.
+
+Example: ""JitsiMeetSDK/0.0.0 (android/34) react-native/0.75.4"""
+2c968809854b6fe07a131d6381c4a6715a0a6bec,Saúl Ibarra Corretgé,2024-10-30T13:02:56Z,fix(android) add SDK version information
+3fb968b3cbc701838f5a8cce84a9a84e530839ce,Saúl Ibarra Corretgé,2024-10-30T13:11:09Z,"feat(rn,screen-sharing) allow sharing the screen and camera on mobile (#15236)
+
+* feat(rn,screen-sharing) allow sharing the screen and camera on mobile
+
+With the advancements in layer suspension it should now be ok to do.
+Users can still mute the camera themselves if they so desire.
+
+Having the camera enabled while in the background is a separate effort."
+b2059060fc601945662bc92040014b296c70540c,Saúl Ibarra Corretgé,2024-10-30T11:37:12Z,"fix(rn,android) fix build for RN 0.75
+
+It requires Kotlin 1.9. Some modules needed to be updated in order to
+gain that compatibility."
+6ad2735efb4e70bda0730694a3776c2bb9d19376,Saúl Ibarra Corretgé,2024-10-30T10:56:42Z,"fix(rn,call-integration) use a more reliable event for starting
+
+The will-join event happens before we actually try to join and things
+would go wrong, whereas join-in-progress happens when it's guaranteed
+that joining will be successful."
+e2a933ad9266f08f32ca46a41fe272a89e53b14f,Calin-Teodor,2024-10-30T10:18:22Z,chore(android): update rnVersion
+12b682992b7b3bd33e26f3349490393eb505abda,Calinteodor,2024-10-30T07:51:12Z,"chore(appState): default empty string state does not check conditions (#15240)
+
+* feat(mobile/background): force appState status when the app mounts"
+4f78dee7086a34725a1a6fcc25059337b50f0625,Jaya Allamsetty,2024-10-29T15:58:48Z,"chore(deps) lib-jitsi-meet@latest
+
+https://github.com/jitsi/lib-jitsi-meet/compare/v1880.0.0+5d53ecdc...v1882.0.0+d51e5575"
+7ff78313ffa07c3e90fcecd2132c2b13b9b8b488,Calin-Teodor,2024-10-29T11:05:01Z,dep(react-native): update to 0.75.4
+ac182c18f94bf614ab8115ee7709dd749d0ca6d8,Edgars Voroboks,2024-10-29T11:28:21Z,lang: Update Latvian language translation (#15244)
+b562176062cb6ebc3e53ec3138d0b17651666513,Saúl Ibarra Corretgé,2024-10-28T11:28:00Z,chore(deps) npm audit fix
+437ed46349d3144a1ad6fb78dcfc6db692fb54d9,Saúl Ibarra Corretgé,2024-10-28T13:32:22Z,"fix(e2ee) don't display E2EE verified field until final
+
+It shows all the time otherwise, confusing users who haven't even
+enabled it."
+f0e01da39a841bd69d945268547c22d93d97ab71,Дамян Минков,2024-10-28T15:13:19Z,"feat(connection): Handles the new connection error CONFERENCE_REQUEST_FAILED. (#15231)
+
+* feat(connection): Handles the new connection error CONFERENCE_REQUEST_FAILED.
+
+Reloads when this fatal error occurs.
+
+* chore(deps) lib-jitsi-meet@latest
+
+https://github.com/jitsi/lib-jitsi-meet/compare/v1878.0.0+a7476b12...v1880.0.0+5d53ecdc"
+755ab2a1082739d5cb6e047f74806308d35f0bbd,Saúl Ibarra Corretgé,2024-10-28T13:34:21Z,feat(e2ee) add flag to disable the feature
+c11f5d36ea789d88349021e79177598dc58a9469,Saúl Ibarra Corretgé,2024-10-28T11:46:51Z,"feat(sounds) skip playing back sounds when leaving a conference
+
+When we leave we see all participants leaving too, which triggers the
+""recording has ended"" sound for example, which is not desirable."
+ecf72273afcc1bd96148086d0e629d5216a407fa,Ramazan Sancar,2024-10-28T12:47:43Z,"lang: Missing keys in Turkish language file added with translations. (#15232)
+
+* add: Missing keys in Turkish language file added with translations.
+upd: Translations marked as """", which have not been translated, have been completed.
+upd: Updated with ""..."" (ellipsis), which is the symbolic value for ""..."" (three dots).
+fix: Wrong words in the dictionary in the source have been corrected.
+
+* upd: Updated with ""..."" (ellipsis), which is the symbolic value for ""..."" (three dots) all languages."
+960a08c0663c63d4ddcc8d7100f6bfc509ee0913,Hristo Terezov,2024-10-25T15:28:31Z,"fix(conference): Make sure join waits for confernce.init.
+
+It was possible that join can be executed before conference.init have even started or we haven't reached the point ot create the initialGUMPromise. This was causing the following issues:
+ - users stuck on the prejoin screen
+ - participants join 2+ times in the call (we have been creating more than 1 local participants from a single page)."
+390431f4d01fe16c74e9aac708ce24cff478a381,damencho,2024-10-24T15:11:33Z,fix(transcribing): Fix missing transcribing status changed event.
+06365271463133ad304ceb9f94323952b6c4715d,Sakıp Han Dursun,2024-10-23T22:01:03Z,"lang: Update Turkish translation (#15222)
+
+Update: Added Turkish translation for ""followMeRecorder""
+
+Co-authored-by: sakiphandursun <sakip.dursun@alpata.com>"
+66ba41992db8e26feaf80784ec69e51c56c3ee73,Andrei Gavrilescu,2024-10-23T09:14:00Z,fix(premeeting): remove console log #15217
+036d783776937c579653e75c1b208151d16b9070,damencho,2024-10-22T14:32:51Z,feat(subtitles): Adds an option to automatically enable subtitles when transcriber is available.
+1f37e0ba8d254d43818dde932b9ad3d2bd9808d8,Дамян Минков,2024-10-22T17:41:24Z,"feat(visitors): Uses metadata to save participants that were promoted. (#15215)
+
+* feat(visitors): Uses metadata to save participants that were promoted.
+
+* squash: fix comments.
+
+* squash: fix comments."
+2d15cc025e87529c15c927b40657ab81b216fa11,Jaya Allamsetty,2024-10-22T16:44:12Z,"chore(deps) lib-jitsi-meet@latest
+
+https://github.com/jitsi/lib-jitsi-meet/compare/v1876.0.0+fac989a9...v1878.0.0+a7476b12"
+4b93cbbd8d2a7f49b93501ac753bd291d283fda5,Saúl Ibarra Corretgé,2024-10-22T13:21:18Z,fix(chat) make reactions processing more resilient
+939a9a45d3fc5ec29798a16dcda9b934bf48f6f6,Calinteodor,2024-10-22T13:19:31Z,"feat(mobile/background): use reducedUI only when app is not active and log appState (#15167)
+
+* feat(mobile/background): use reducedUI only when app is not active and log appState changes"
+dd859d2a26adb3bfc888db64acd5b0243472b2b3,Andrei Gavrilescu,2024-10-22T08:20:30Z,"feat(premeeting): pre-join connection test (#15151)
+
+* enable precall test
+
+* minor fixes
+
+* update lang sort
+
+* code review"

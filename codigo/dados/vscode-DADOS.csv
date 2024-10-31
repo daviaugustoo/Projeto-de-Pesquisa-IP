@@ -1,0 +1,88 @@
+sha,author,date,message
+0865c01675143b95d234763a326268957fe5a86c,Aaron Munger,2024-10-31T17:08:01Z,"dont replace a cell for internal metadata change while the cell is executing (#232678)
+
+* dont replace a cell for internal metadata change while the cell is executing
+
+* switch conditional
+
+* add arg"
+8e7061874e9a6088af47ed6baf660232085bcae3,Justin Chen,2024-10-31T17:06:13Z,"fix code action race condition (#232690)
+
+* revert promise wrapping
+
+* remove racetimeout
+
+* simple delay for showing code action progress
+
+* cleanup whitespace
+
+---------
+
+Co-authored-by: Johannes <johannes.rieken@gmail.com>"
+931da885329cc1ca885ee53b960c9e8ad2641a23,Matt Bierner,2024-10-31T16:56:55Z,Fix conditional (#232742)
+04d0859ffe741afe010f34adc1499f430dca7181,Daniel Imms,2024-10-31T16:51:03Z,"Merge pull request #232738 from microsoft/tyriar/232656
+
+Don't dismiss quick fix when it's used & improve lifecycle"
+0334df2899efa05a65a86f79e3f76588e17c667f,Johannes Rieken,2024-10-31T16:39:53Z,keep `string` for `TreeItem#iconPath` (#232710)
+78af45ed057794792646dbf5b5c3fcf70d78b210,Daniel Imms,2024-10-31T15:23:02Z,Improve lifecycle management of quick fix addon
+297bf7f2e962fa803173f534b7b52ef4411fff8d,Daniel Imms,2024-10-31T15:14:25Z,"Don't dismiss quick fix when it's used
+
+Fixes #232656"
+49bf27ee9a080cce9b8bdaa71d9ba1340d346700,Raymond Zhao,2024-10-31T14:50:41Z,fix: interactive postinst script breaks install for non-interactive environments (#227837)
+b62b4161a0b5968f58242e602de2279230cf485b,Robo,2024-10-31T10:27:30Z,fix: font config detection for snap (#232713)
+54d1a4d6f395e73204ce0b5999439b267aec3fef,Sandeep Somavarapu,2024-10-31T10:23:54Z,add more logs (#232718)
+bea51cd8de36f1d577e6ba436da5c0f5b95fbc2c,Alex Ross,2024-10-31T10:23:38Z,"Find all reference panel empty list (#232720)
+
+Fixes #232709"
+38a37991730cb3961ab80e3b9b2653977cd48b20,Christof Marti,2024-10-31T08:52:42Z,Listen on submenu changes
+fb8d71703b33630a461c0ea78ef2029f6e5add65,Aiday Marlen Kyzy,2024-10-31T09:34:10Z,"ContentHoverController refactoring (#232626)
+
+* wip
+
+* fixing compilation errors
+
+* refactoring
+
+* fixing hover not showing"
+02a6d303d101d9e9a84486d75223d1b7d366733c,Robo,2024-10-31T08:57:37Z,chore: bump spdlog@0.15.1 (#232572)
+94cc631aca2379c2b44eb7fd8b729c1e221a904f,Matt Bierner,2024-10-31T00:46:48Z,"Fix position symbol icon in chat anchors (#232683)
+
+Override value introduced in  b6648af1eac7021cc646d1a9f59e93026a7c1689"
+53339705b042ff9283eb08be1f0b091e68efad4b,Joyce Er,2024-10-31T00:30:17Z,fix: don't render attachment container in chat input for file entries in chat editing widget (#232681)
+17b7ccc2be28db3f5c79457b64bc1e14adafe5aa,Justin Chen,2024-10-30T23:47:21Z,"fix url length issue for github issues (#232680)
+
+fix logged in github post req"
+7dd56c4ea570626a59ec4c12eb742e2ca0af97d0,Rob Lourens,2024-10-30T23:45:58Z,"Fix implicit context widget blinking (#232205)
+
+Debounce onDidChangeModel
+microsoft/vscode-copilot#9479"
+ea6e8e22fcc0f6c4511fc7639a9f4a0d53209b5d,Matt Bierner,2024-10-30T23:37:34Z,"Merge pull request #232676 from iisaduan/organizeImportsSettingsFix
+
+fix typescript organizeImports settings"
+a0653eb347bc4cd6d496df73286cd7d6759a9d51,Joyce Er,2024-10-30T23:05:12Z,"fix: add padding to chat editing list entries (#232674)
+
+* fix: add padding to chat editing list entries
+
+* fix: center spinners vertically in chat editing response"
+20a02666f90011d62fd204ba32ece32cfd13a487,Isabel Duan,2024-10-30T22:50:10Z,Merge branch 'main' into organizeImportsSettingsFix
+fbbcdd4f051b9d1c390140c594eef97143c4e194,Isabel Duan,2024-10-30T22:44:19Z,"fix wrong description, add examples"
+c264ebed9425f3569ab5eb2c6fbc6a6bb4abaaaf,Tyler James Leonhardt,2024-10-30T22:39:34Z,"Improve Secret Storage docs a bit (#232672)
+
+To call out that each platform will be different."
+95779b7b37d9c993b11cebe0971ca37b75309742,Isabel Duan,2024-10-30T22:28:59Z,"add descriptions, refactor getPreferences function to be more clear"
+c7fe0659a04f95d4b12e7dbae7b648dba97dd807,Rob Lourens,2024-10-30T22:25:12Z,Add stub lmTools proposal to prevent old extensions from installing in 1.95 (#232670)
+6324f5f3ea7837b2df1187fd4c9f5a4c3203543d,Joyce Er,2024-10-30T21:52:02Z,fix: don't truncate focused element border in chat editing widget (#232667)
+d83223b7c2071e4600bc2157041058f70192883f,Matt Bierner,2024-10-30T21:20:30Z,"Try allowing custom commands to be sent to tsserver by extensions (#232663)
+
+For #218275
+
+Limit this to commands that start with `_` which should indicate that it's a private command and prevent clashes with normal TS commands"
+8875f03ec8025890904defe3344c831aedaaeee7,Matt Bierner,2024-10-30T21:03:43Z,"Remove code action contribution section (#232664)
+
+This was never fully implemented and I'm not sure we're going to move forward with the static contribution proposal"
+1b97a8726ac145c4130d493ed6cd0b99de40af3d,Andrea Mah,2024-10-30T20:38:03Z,"Merge pull request #232662 from microsoft/stuck-lungfish
+
+remove 'very experimental' comment"
+1d23fb896754d02df3559a945dae15f26b9546c9,Daniel Imms,2024-10-30T20:36:54Z,"Merge pull request #232493 from microsoft/tyriar/232424
+
+Include new shell executables in traverseTree"

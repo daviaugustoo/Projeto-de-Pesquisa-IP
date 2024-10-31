@@ -1,0 +1,71 @@
+sha,author,date,message
+6558981367d76030c8528214813323a9edf29c55,Kent Wang,2024-10-31T09:12:08Z,Merge branch 'release/10.2.0-beta.1' into develop
+7983be6619e47f396f440ee7c8b0001af8bcb656,Kent Wang,2024-10-31T08:01:46Z,Bump app version to 10.2.0-beta.1
+4c759b071514129f65c2966ebe3b98876aeaef91,yaoweiprc,2024-10-31T07:32:03Z,Resolve error when user aborts merge in cloud sync (#8133)
+2bc22d20e32fe727248c0bf2f2517c9d82f17aa4,Kent Wang,2024-10-31T06:11:11Z,1.fix environment editor title issue (#8142)
+f3da7c1ddc75841198d43b1fc15ca7b9ed0ef38b,Curry Yang,2024-10-30T03:57:47Z,feat: grpc UI improvements (#8137)
+7831e53026c824f4cc6df28d494110509fb957f2,Kent Wang,2024-10-30T02:12:25Z,"Fix: Change default environment to table view when create in project view [INS-4618] (#8136)
+
+Change default environment to table view when create in project view"
+c82680aeefc441371a3b7041a39c39d060c3a0fb,George He,2024-10-28T03:27:26Z,"fix(cli): ca and certs are not included in loading db from CLI (#8111)
+
+* fix: ca and certs are not included in loading db
+
+* test(cli): add a test for the case
+
+* fix: remove key content
+
+* fix: cli test failed
+
+* test: add a test for checking Settings enablement"
+0bae709f2fd7440f022c24cd8631c5e36e667ca6,Kent Wang,2024-10-28T02:26:00Z,"feat: Key-value pair view for environment[INS-4256] (#8071)
+
+1. Add key-value pair view for environment editor
+2. Change the default environment view to table view
+3. Add warning and key-value pair name validation"
+070d2f369398cd6c9b17a4507654e3e23963ef64,yaoweiprc,2024-10-25T09:13:07Z,Merge branch 'release/10.2.0-beta.0' into develop
+3c197c406dac12e2986a0b412dcc8285c0e57406,yaoweiprc,2024-10-25T08:23:51Z,Bump app version to 10.2.0-beta.0
+cde96f947d875cf322b96d46db8f79d466639425,yaoweiprc,2024-10-25T08:15:12Z,fix https://github.com/Kong/insomnia/issues/8121 (#8128)
+0297594e988fff75e6574e260341b92494f7f744,yaoweiprc,2024-10-25T06:29:42Z,"Support for import raw body type info from Postman [INS-4588] (#8123)
+
+Support for import raw body type info from Postman"
+a1e99a2dc0544fbbfaa91e72b83a0428b5ac8e45,Kent Wang,2024-10-25T06:15:33Z,1.Fix global environment unset issue (#8127)
+7ffe056e75e412b38833916c9a0ff4a44dc2e024,Kent Wang,2024-10-25T05:49:43Z,"Revert ""1.fix can not unset global environment issue""
+
+This reverts commit 6432a35a1265ebd9d5da30ce2a9dad6b2d19aa14."
+6432a35a1265ebd9d5da30ce2a9dad6b2d19aa14,Kent Wang,2024-10-25T05:40:47Z,1.fix can not unset global environment issue
+078bb9b99770f2d1715864373e3dca0e762e5224,Filipe Freire,2024-10-24T19:01:49Z,Merge branch 'release/10.1.1' into develop
+fe62bc9380b19ceb906b6b1c5a6afd8f1c665df1,Filipe Freire,2024-10-24T15:30:23Z,Bump app version to 10.1.1
+327f16e642cd796301770d5d8a73888309b92660,Mark Jongeling,2024-10-24T08:00:47Z,"Fix/mask auth passwords (#8110)
+
+* Add mask property to sensitive authentication fields
+
+* Removed whitespace"
+7a6725578cc4847f7f2dfc7512d7130b5febc2e6,Filipe Freire,2024-10-23T15:43:23Z,Merge branch 'release/10.1.1-beta.0' into develop
+4e8e7a268bf16400e688e3aeffc55005438b0bb9,Filipe Freire,2024-10-23T15:15:28Z,skip_cis_scan: true
+bfb2f4567f651156578b499eefe69275775d86c6,Filipe Freire,2024-10-23T14:54:59Z,fix: use different security-actions version
+42cfe58b6aae306b1a18940dbc2af35e0203e832,Filipe Freire,2024-10-23T12:27:50Z,Bump app version to 10.1.1-beta.0
+2eab1601739bb9f9f0f8675e4d1925a1fe84b912,James Gatz,2024-10-23T10:30:38Z,"fix(Git): Only search for insomnia files and fix unstage changes (#8117)
+
+* Only search for insomnia files and fix unstage changes
+
+* update unit tests"
+1ad42463a6c45af1c10ec71430d00f37a18cb7ae,jackkav,2024-10-23T08:10:57Z,readme fix
+43673d61b039a1b2bd70967a1d13b770765b8175,Jack Kavanagh,2024-10-23T07:26:11Z,still a hack (#8089)
+1514992f8653ae43655b97286c77f11bd3f6ca74,James Gatz,2024-10-22T11:05:31Z,fix issue with filtering staged changes (#8113)
+083aa5a14b268774708f17a4a551d0f6aed59bb9,James Gatz,2024-10-22T10:08:53Z,Clone using git instead of updating the db to avoid creating conflicts (#8109)
+e0f081317597f2469c4184ac1d64f33718781b43,George He,2024-10-22T09:00:06Z,"feat(runner): support several cases for setNextRequest (#8088)
+
+* feat(runner): support several cases for setNextRequest
+
+* fix: lint error
+
+* fix: test errors
+
+* refactor: add a test and simplify the logic
+
+* fix: runner test failed
+
+* fix: update the classname of items in the request list"
+381b5faae087d3c25e644d5500a519489f5ff660,rohit_patil,2024-10-21T11:16:36Z,Changing the error message when file not schanned. (#8104)
+30917d8f9bce95d6bad5a72bff62b8a2c9810f49,George He,2024-10-21T10:02:40Z,fix: remove advanced settings title as it is duplicated (#8108)

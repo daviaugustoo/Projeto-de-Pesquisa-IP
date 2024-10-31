@@ -1,0 +1,102 @@
+sha,author,date,message
+c45aa1006757031937e00c43b3de3357add80c3d,Matteo Vivona,2022-02-12T15:17:24Z,"Merge pull request #2867 from HospitalRun/dependabot/npm_and_yarn/commitlint/core-16.0.0
+
+chore(deps-dev): bump @commitlint/core from 15.0.0 to 16.0.0"
+52d66e5c6c8c1568e9aa207d22c8ab2b4806578b,HospitalRun Bot,2022-02-12T15:13:34Z,Merge branch 'master' into dependabot/npm_and_yarn/commitlint/core-16.0.0
+5694087b0b952b594fe4188dae2100b244631fe8,Matteo Vivona,2022-02-12T15:13:08Z,Merge branch 'master' into dependabot/npm_and_yarn/commitlint/core-16.0.0
+fe741e4b020248bc1ca4606a5d4b043475376128,Matteo Vivona,2022-02-12T15:12:19Z,"Merge pull request #2882 from HospitalRun/dependabot/npm_and_yarn/lint-staged-12.3.3
+
+chore(deps-dev): bump lint-staged from 12.1.7 to 12.3.3"
+230f6e476d6adc4ec3a70e1664f860aae9a02307,HospitalRun Bot,2022-02-12T15:12:08Z,Merge branch 'master' into dependabot/npm_and_yarn/lint-staged-12.3.3
+1128460485c67d96c924ddf8eaabbe24ab1a8a9a,HospitalRun Bot,2022-02-12T15:11:55Z,Merge branch 'master' into dependabot/npm_and_yarn/lint-staged-12.3.3
+32bd999c6b8defa3f537c8ca44b8c1da98733174,Matteo Vivona,2022-02-12T15:11:51Z,Merge branch 'master' into dependabot/npm_and_yarn/lint-staged-12.3.3
+8fea1d4521e66f82ecaf68178322bacb8f056354,Matteo Vivona,2022-02-12T15:11:45Z,"Merge pull request #2883 from HospitalRun/dependabot/npm_and_yarn/eslint-plugin-jest-26.1.0
+
+chore(deps-dev): bump eslint-plugin-jest from 25.3.4 to 26.1.0"
+f4b9c3d4e14a2d697e74dc992bc56230c434a9dc,Matteo Vivona,2022-02-12T15:11:39Z,Merge branch 'master' into dependabot/npm_and_yarn/eslint-plugin-jest-26.1.0
+e15844d5ebf31b148b2cced73941cd44ea67ccda,Matteo Vivona,2022-02-12T15:11:32Z,"Merge pull request #2876 from HospitalRun/dependabot/npm_and_yarn/commitlint/cli-16.1.0
+
+chore(deps-dev): bump @commitlint/cli from 16.0.3 to 16.1.0"
+0419e8a36daa5775e58740278cc728825e1ebe09,HospitalRun Bot,2022-02-12T13:34:46Z,Merge branch 'master' into dependabot/npm_and_yarn/lint-staged-12.3.3
+b7826676daee289267b0fe9cb44468e7db0d720c,HospitalRun Bot,2022-02-12T13:34:46Z,Merge branch 'master' into dependabot/npm_and_yarn/eslint-plugin-jest-26.1.0
+3762fbf4a7b2e2db028632921d6439cff5d70bfb,HospitalRun Bot,2022-02-12T13:34:46Z,Merge branch 'master' into dependabot/npm_and_yarn/commitlint/cli-16.1.0
+746e8d778c8a24dce0bc7eabbd1d65eed91c35da,HospitalRun Bot,2022-02-12T13:34:41Z,Merge branch 'master' into dependabot/npm_and_yarn/lint-staged-12.3.3
+d5b4fa201dff88317a4b2bc7e4741a2340b1ad1d,HospitalRun Bot,2022-02-12T13:34:41Z,Merge branch 'master' into dependabot/npm_and_yarn/commitlint/cli-16.1.0
+974c83ab4b342302569254542c34863f72626112,HospitalRun Bot,2022-02-12T13:34:40Z,Merge branch 'master' into dependabot/npm_and_yarn/eslint-plugin-jest-26.1.0
+26e3ea6e688f4773dbf215fb931fa9a07c88f799,Matteo Vivona,2022-02-12T13:34:24Z,Delete auto-merge.yml
+45bec387f9672f14bcdc284207d6dd29e07ae155,Matteo Vivona,2022-02-12T13:34:13Z,"Merge pull request #2875 from HospitalRun/dependabot/npm_and_yarn/commitlint/prompt-16.1.0
+
+chore(deps-dev): bump @commitlint/prompt from 16.0.0 to 16.1.0"
+1bbdbb99b195e0b3f776d5b5932bfec38e675293,dependabot[bot],2022-02-07T08:01:28Z,"chore(deps-dev): bump eslint-plugin-jest from 25.3.4 to 26.1.0
+
+Bumps [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) from 25.3.4 to 26.1.0.
+- [Release notes](https://github.com/jest-community/eslint-plugin-jest/releases)
+- [Changelog](https://github.com/jest-community/eslint-plugin-jest/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/jest-community/eslint-plugin-jest/compare/v25.3.4...v26.1.0)
+
+---
+updated-dependencies:
+- dependency-name: eslint-plugin-jest
+  dependency-type: direct:development
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>"
+18cf1e4497c9cb69f5baf1e518faf510a8e5212f,dependabot[bot],2022-02-02T08:01:19Z,"chore(deps-dev): bump lint-staged from 12.1.7 to 12.3.3
+
+Bumps [lint-staged](https://github.com/okonet/lint-staged) from 12.1.7 to 12.3.3.
+- [Release notes](https://github.com/okonet/lint-staged/releases)
+- [Commits](https://github.com/okonet/lint-staged/compare/v12.1.7...v12.3.3)
+
+---
+updated-dependencies:
+- dependency-name: lint-staged
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>"
+365f9e7075f4fa0d10ee862c257862f4c026240e,dependabot[bot],2022-01-20T08:01:37Z,"chore(deps-dev): bump @commitlint/cli from 16.0.3 to 16.1.0
+
+Bumps [@commitlint/cli](https://github.com/conventional-changelog/commitlint/tree/HEAD/@commitlint/cli) from 16.0.3 to 16.1.0.
+- [Release notes](https://github.com/conventional-changelog/commitlint/releases)
+- [Changelog](https://github.com/conventional-changelog/commitlint/blob/master/@commitlint/cli/CHANGELOG.md)
+- [Commits](https://github.com/conventional-changelog/commitlint/commits/v16.1.0/@commitlint/cli)
+
+---
+updated-dependencies:
+- dependency-name: ""@commitlint/cli""
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>"
+c63fc6fa59cb0ec8edaabdadbda157179e8e6116,dependabot[bot],2022-01-20T08:01:22Z,"chore(deps-dev): bump @commitlint/prompt from 16.0.0 to 16.1.0
+
+Bumps [@commitlint/prompt](https://github.com/conventional-changelog/commitlint/tree/HEAD/@commitlint/prompt) from 16.0.0 to 16.1.0.
+- [Release notes](https://github.com/conventional-changelog/commitlint/releases)
+- [Changelog](https://github.com/conventional-changelog/commitlint/blob/master/@commitlint/prompt/CHANGELOG.md)
+- [Commits](https://github.com/conventional-changelog/commitlint/commits/v16.1.0/@commitlint/prompt)
+
+---
+updated-dependencies:
+- dependency-name: ""@commitlint/prompt""
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>"
+244ce408f6a2da3f3e7ce618d1e972e912c2d214,HospitalRun Bot,2022-01-04T08:53:31Z,Merge branch 'master' into dependabot/npm_and_yarn/commitlint/core-16.0.0
+08b027c1345728caaaeac9b492654af5fc404804,Matteo Vivona,2022-01-04T08:53:01Z,"Merge pull request #2869 from HospitalRun/dependabot/npm_and_yarn/commitlint/cli-16.0.1
+
+chore(deps-dev): bump @commitlint/cli from 15.0.0 to 16.0.1"
+eec4152477a3d0bf2c440bd8077794d5eb8f515b,Matteo Vivona,2022-01-04T08:43:04Z,Merge branch 'master' into dependabot/npm_and_yarn/commitlint/core-16.0.0
+021fb0e13af862cc859186e2ccce8b4c850fb2e4,Matteo Vivona,2022-01-04T08:42:16Z,Merge branch 'master' into dependabot/npm_and_yarn/commitlint/cli-16.0.1
+733113fc83fe2f8eb6232503ca5bc8024546260c,Matteo Vivona,2022-01-04T08:41:51Z,"Merge pull request #2870 from HospitalRun/dependabot/npm_and_yarn/date-fns-2.28.0
+
+chore(deps): bump date-fns from 2.27.0 to 2.28.0"
+b0a6780cd577856e4cb31ff81f6a822dbb493c07,HospitalRun Bot,2022-01-02T18:28:13Z,Merge branch 'master' into dependabot/npm_and_yarn/commitlint/cli-16.0.1
+3c77cee6a5865dd620e9f9d1ea9299ec59303be5,HospitalRun Bot,2022-01-02T18:28:13Z,Merge branch 'master' into dependabot/npm_and_yarn/date-fns-2.28.0
+d8a7ce207ff3099b2a9d3a24bbb9ad3c1eb83f96,Matteo Vivona,2022-01-02T18:26:32Z,"Merge pull request #2868 from HospitalRun/dependabot/npm_and_yarn/commitlint/prompt-16.0.0
+
+chore(deps-dev): bump @commitlint/prompt from 15.0.0 to 16.0.0"

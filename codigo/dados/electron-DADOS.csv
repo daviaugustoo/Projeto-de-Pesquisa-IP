@@ -1,0 +1,227 @@
+sha,author,date,message
+31f8e7553b0f01bc3e18fd0826533e619ecb0ade,Sam Maddock,2024-10-31T01:29:01Z,"fix: flaky utility and BrowserView tests (#44451)
+
+* fix: flake wait for crash with specific serviceName
+
+* fix: flake when unrelated WebContents exists during BrowserView tests
+
+* fix: wait for crash before forking
+
+* use name"
+7cdf1a01b800f6270c1fce1b7b45522e0e0ed79b,Charles Kerr,2024-10-30T19:56:10Z,"docs: fix win.setContentView() arg type (#44478)
+
+fix: setContentView type"
+a720c8daf6a294871be6b8818150d57979f88b40,Charles Kerr,2024-10-30T04:25:40Z,perf: remove isolate scope from DidProcessTask() (#44439)
+fb959f8d30ad015c997ee999ddbe9a77e86acb29,Charles Kerr,2024-10-29T22:28:34Z,build: enable -Wunsafe-buffer-usage warnings (#44056)
+de04fc3b902405491939045161743f22e9fbb712,Alice Zhao,2024-10-29T22:10:10Z,"fix: update shell.openExternal to correctly focus on external window (#44408)
+
+* fix: Use openURL:configuration:completionHandler instead of openUrl
+
+* test: add a test
+
+* fix: add dispatch_async to replace GetUIThreadTaskRunner
+
+* refactor: remove unused import
+
+* fix: update to use BindPostTaskToCurrentDefault
+
+* test: add regression test for window focus
+
+* refactor: update to explicit task runner"
+7ff7160135e52f419f05cfbaf0b6be5cb36f4221,Shelley Vohr,2024-10-29T20:41:44Z,"docs: fix `win.getContentView(`) return type (#44430)
+
+docs: fix win.getContentView() return type"
+9fc94a162bed056daea0324ca878f33061484cb0,Shelley Vohr,2024-10-29T15:35:57Z,"build: fix python util verbose mode logic (#44431)
+
+build: fix verbose mode logic"
+53458da01ef239a16fb9de80ccc04fc07a040ffa,Devin Binnie,2024-10-29T15:16:29Z,"docs: Fix `powerMonitor` docs for type generation of `speed-limit-change` (#44391)
+
+Fix `powerMonitor` docs for type generation of `speed-limit-change`"
+dffe00b232010811f37f07d509c0f3a00d9f119e,Charles Kerr,2024-10-29T12:23:08Z,"fix: -Wunsafe-buffer-usage warnings with argc, argv (#44366)
+
+* refactor: move uv_setup_args() calls to startup
+
+* refactor: call base::CommandLine::Init() before ContentMain()
+
+* feat: add ElectronCommandLine::AsUtf8()
+
+* refactor: call base::CommandLine::Init() before NodeMain()
+
+* refactor: use ElectronCommandLine::AsUtf8() in NodeMain()
+
+* fix: -Wunsafe-buffer-usage warning in ElectronCommandLine::Init()
+
+* chore: add a DCHECK to confirm ElectronCommandLine was initialized before AsUtf8() is called
+
+* chore: const correctness in ElectronCommandLine::Init() args
+
+* chore: add ElectronCommandLine to macOS Electron Helper app
+
+* chore: move argc, argvc setup into electron_library_main on macOS
+
+* chore: revert BUILD.gn changes
+
+* fix: WideToUTF8() call in ElectronCommandLine::AsUtf8()
+
+* build: add uv to the include paths for app/electron_main_linux
+
+* build: add uv to the include paths for app/electron_library_main.mm
+
+* chore: revert unrelated changes
+
+these were intended for another branch"
+39b24aed923a98559181ae6e0a64cda7c2cd91e7,Shelley Vohr,2024-10-29T12:22:26Z,"refactor: move node ofs script to electron (#44425)
+
+* refactor: move node ofs script to electron
+
+* chore: remove empty file"
+f7ead785cdd8a394bc42d26b990985f32143d4ac,dependabot[bot],2024-10-29T12:21:09Z,"build(deps): bump actions/setup-node from 4.0.4 to 4.1.0 (#44433)
+
+Bumps [actions/setup-node](https://github.com/actions/setup-node) from 4.0.4 to 4.1.0.
+- [Release notes](https://github.com/actions/setup-node/releases)
+- [Commits](https://github.com/actions/setup-node/compare/0a44ba7841725637a19e28fa30b79a866c81b0a6...39370e3970a6d050c480ffad4ff0ed4d3fdee5af)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-node
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+b3c2e83243b3c24da97b6b695e1ef19e1b473992,Charles Kerr,2024-10-29T09:30:12Z,"refactor: prefer `inline constexpr string_view` for string constants (#44405)
+
+* refactor: BaseWindow::OnExecuteAppCommand() now takes a std::string_view
+
+* refactor: NativeWindow::NotifyWindowExecuteAppCommand() takes a std::string_view
+
+* refactor: AppCommandToString() returns a std::string_view, is now constexpr
+
+* refactor: make kBrowserBackward, kBrowserForward inline constexpr std::string_view
+
+Xref: https://abseil.io/tips/140
+
+https://groups.google.com/a/chromium.org/g/chromium-dev/c/jROTxMo_m2Q/m/HgciN2KsAgAJ
+
+* refactor: use inline constexpr string_view for kDevice*Key constants
+
+Xref: https://abseil.io/tips/140
+
+https://groups.google.com/a/chromium.org/g/chromium-dev/c/jROTxMo_m2Q/m/HgciN2KsAgAJ
+
+* refactor: IsEnvSet now takes a base::cstring_view
+
+* refactor: use inline constexpr cstring_view for kRunAsNode
+
+* refactor: use inline constexpr string_view for kPDF*PluginName
+
+* refactor: use base::FilePath::FromASCII() since ""internal-pdf-viewer"" is ascii
+
+* chore: remove unused shell/common/electron_constants.cc
+
+* fixup! refactor: IsEnvSet now takes a base::cstring_view"
+cc3359f12619afb5fea7b86782e40b70cceef038,dependabot[bot],2024-10-29T08:59:22Z,"build(deps): bump actions/checkout from 4.2.1 to 4.2.2 (#44435)
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.2.1 to 4.2.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871...11bd71901bbe5b1630ceea73d27597364c9af683)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+46561fc5bc451230b059bd10998d0e750b707c72,Shelley Vohr,2024-10-29T08:59:10Z,"build: improve `gen-libc++-filenames` output (#44424)
+
+build: improve gen-libc++-filenames output"
+214c8228ed86c7aa225ed4e43e878077b00d5cdc,dependabot[bot],2024-10-29T06:05:46Z,"build(deps): bump github/codeql-action from 3.26.13 to 3.27.0 (#44434)
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.26.13 to 3.27.0.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/f779452ac5af1c261dce0346a8f964149f49322b...662472033e021d55d94146f66f6058822b0b39fd)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+739688214b8629fe6be8eea6423b160b99607442,Robo,2024-10-29T00:44:20Z,fix: keep gdk_pixbuf a dynamic dependency (#44423)
+5d0d15a0b365267d3a88fe43e6719903c6d3e82d,Charles Kerr,2024-10-28T13:12:32Z,"perf: prefer NewFromUtf8Literal() over NewFromUtf8() for string literals (#44412)
+
+* perf: prefer NewFromUtf8Literal() over NewFromUtf8() for string literals
+
+the string length is known at compile time and no need to call ToLocalChecked()
+
+* perf: string length is known when calling NewFromUtf8(), so use it
+
+* perf: remove unnecessary calls to c_str()
+
+these just force the code being called to have to recalculate the string length"
+348801b20eb7094f87ffb92b84903d010afca56c,Sam Maddock,2024-10-28T09:24:54Z,"fix: crash on netlog connection error (#44406)
+
+* fix: crash on netlog connection error
+
+* refactor: remove default PromiseBase constructor
+
+* Revert ""refactor: remove default PromiseBase constructor""
+
+This reverts commit 9292324a0d5f9e63ba8f73f63dfff1d48eb2f38f.
+
+* remove dcheck"
+57920e7747f09627f99ed5c27457339aa7c3fe57,John Kleinschmidt,2024-10-25T00:47:17Z,test: deflake flaky tests on linux (#44383)
+a0f51d816e7b66e1f60943c672b53bbede94a34a,John Kleinschmidt,2024-10-24T20:58:36Z,build: update linux container (#44392)
+83d704009687956fb4b69cb13ab03664d7950118,Charles Kerr,2024-10-23T19:18:22Z,"fix: -Wunsafe-buffer-usage warning in didRegisterForRemoteNotificationsWithDeviceToken (#44348)
+
+* chore: move as_byte_span() to new shell/common/mac_util.h
+
+this way it can be used by multiple mm files
+
+* fix: -Wunsafe-buffer-usage warnings in UNNotificationResponseToNSDictionary
+
+* refactor: use base::HexEncode() instead of rolling our own
+
+* fixup! chore: move as_byte_span() to new shell/common/mac_util.h
+
+* fixup! chore: move as_byte_span() to new shell/common/mac_util.h
+
+fix: move mac_util to the right place in filenames.gni"
+c42fb09fc925bbe82d0c99b6890af7dd1e0daf62,John Kleinschmidt,2024-10-23T19:14:50Z,"test: fixup flaky tests (#44349)
+
+* test: fixup flaky test
+
+* test: disable flaky protocol speed test on macOS
+
+* test: fixup flaky test in api-browser-window-spec.ts"
+fd500477acca903fd5470801d8a9edf20f2a5654,Shelley Vohr,2024-10-22T17:09:33Z,docs: clarify utilityProcess child.pid value (#44339)
+d60d526df6bca34ef479ba89ef7b598bfe53e882,electron-appveyor-updater[bot],2024-10-22T14:40:00Z,"build: update appveyor image to latest version (#44334)
+
+Co-authored-by: electron-appveyor-updater[bot] <161660339+electron-appveyor-updater[bot]@users.noreply.github.com>"
+e3e94d45eecf24d976adb1905fdef40544de806c,Charles Kerr,2024-10-21T23:20:00Z,"fix: silence -Wunsafe-buffer-usage warning in GetPreferredLanguages() (#44333)
+
+fix: use UNSAFE_BUFFERS macro in GetPreferredLanguages()"
+fff6ea438ac99cfec9818e961faf5c8a87787f91,Sam Maddock,2024-10-21T22:56:03Z,"fix: software compositing infinite loop (#44318)
+
+Co-authored-by: Keeley Hammond <vertedinde@electronjs.org>"
+3e77faf2f75f1cade24f3a9e7f8388d7a2c32013,Robo,2024-10-21T18:26:38Z,fix: crash when generating shortcut text for super accelerator (#44341)
+cc9d85d3caf8f4dd99d29b310d99029ef50d488b,John Kleinschmidt,2024-10-21T18:07:02Z,build: fixup reclient use for prod builds (#44340)
+d3d02ef1115ca5e38c2195017c3b3b5242a3cf80,electron-roller[bot],2024-10-21T14:48:59Z,"chore: bump chromium to 132.0.6789.0 (main) (#44337)
+
+chore: bump chromium in DEPS to 132.0.6789.0
+
+Co-authored-by: electron-roller[bot] <84116207+electron-roller[bot]@users.noreply.github.com>"
+e70f70f5b4b98f121a87eb51f01666eaa4677563,electron-roller[bot],2024-10-21T04:54:06Z,"chore: bump chromium to 132.0.6788.0 (main) (#44331)
+
+chore: bump chromium in DEPS to 132.0.6788.0
+
+Co-authored-by: electron-roller[bot] <84116207+electron-roller[bot]@users.noreply.github.com>"
