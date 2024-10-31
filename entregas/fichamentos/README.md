@@ -1,3 +1,5 @@
+# Artigos selecionados para os fichamentos:
+
 1. **The Impact of Shift-Left Testing to Software Quality in Agile Methodology: A Case Study” (IEEE, 2023)**  
         Estudo de caso que explora o impacto do "shift-left testing" na qualidade de software em ambientes ágeis. Foca em técnicas de testes e seu efeito na detecção de defeitos e produtividade. 
 
