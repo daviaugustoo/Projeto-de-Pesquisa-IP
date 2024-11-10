@@ -1,4 +1,4 @@
-# Fichamento do Artigo 1: The Impact of Shift-Left Testing to Software Quality in Agile Methodology: A Case Study
+# The Impact of Shift-Left Testing to Software Quality in Agile Methodology: A Case Study
 
 **Andriadi, Kus; Soeparno, Haryono; Arifin, Yulyani; Gaol, Ford Lumban.** "The Impact of Shift-Left Testing to Software Quality in Agile Methodology: A Case Study." *2023 International Conference on Information Management and Technology*, IEEE, 2023. doi: [10.1109/ICIMTech59029.2023.10277919](https://doi.org/10.1109/ICIMTech59029.2023.10277919)
 
