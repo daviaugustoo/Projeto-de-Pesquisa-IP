@@ -1,4 +1,4 @@
-# Análise Escrita do Artigo 2: The Impact of Shift-Left Testing to Software Quality in Agile Methodology: A Case Study
+# The Impact of Shift-Left Testing to Software Quality in Agile Methodology: A Case Study
 
 **Introdução**  
 Andriadi et al. (2023) exploram o impacto do Shift-Left Testing na qualidade do software dentro de um contexto ágil. A prática de Shift-Left Testing busca antecipar atividades de teste para as fases iniciais do ciclo de desenvolvimento, permitindo a detecção e correção de defeitos em estágios preliminares.
