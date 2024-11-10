@@ -1,4 +1,4 @@
-# Análise Escrita do Artigo 4: Supporting Agile Teams with a Test Analytics Platform: A Case Study
+# Supporting Agile Teams with a Test Analytics Platform: A Case Study
 
 **Introdução**  
 O artigo de Liechti et al. (2017) apresenta uma solução baseada em uma plataforma de análise de testes para apoiar equipes ágeis. A proposta visa melhorar a qualidade do software ao integrar métricas de testes automatizados em painéis analíticos, proporcionando insights contínuos e acionáveis. O estudo de caso é realizado em uma startup suíça que enfrenta desafios relacionados à baixa adesão a testes automatizados e à necessidade de promover mudanças comportamentais dentro da equipe.
