@@ -1,4 +1,4 @@
-# Fichamento do Artigo 4: Supporting Agile Teams with a Test Analytics Platform: A Case Study
+# Supporting Agile Teams with a Test Analytics Platform: A Case Study
 
 **Liechti, Olivier; Pasquier, Jacques; Reis, Rodney.** "Supporting Agile Teams with a Test Analytics Platform: A Case Study." *12th International Workshop on Automation of Software Testing*, IEEE, 2017. doi: [10.1109/AST.2017.3](https://doi.org/10.1109/AST.2017.3)
 
