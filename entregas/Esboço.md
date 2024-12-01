@@ -9,8 +9,16 @@
 O tema tratado na pesquisa é _Avaliação de técnicas de controle de qualidade no desenvolvimento de software utilizando metodologias ágeis_
 
 # Problema
-O problema a ser resolvido na pesquisa é: 
-_Como as diferentes técnicas de controle de qualidade influenciam a eficiência e a qualidade do desenvolvimento de software em projetos utilizando metodologias ágeis? As práticas de controle de qualidade, como testes automatizados, code reviews e integração contínua, são efetivas em garantir a qualidade do código ao longo de um ciclo de desenvolvimento ágil? O tamanho da equipe ou complexidade do projeto influenciam a adoção dessas técnicas?_
+
+O problema que este trabalho busca resolver é:
+
+1. _Como práticas de controle de qualidade impactam a eficiência e a eficácia no desenvolvimento ágil?_
+2. _As técnicas como integração contínua, revisão de código e testes automatizados são eficazes em melhorar a qualidade do código e a produtividade das equipes?_
+3. _Características como tamanho da equipe e complexidade do projeto influenciam a adoção e eficácia dessas práticas?_
+
+Resolver este problema é relevante porque a adoção de metodologias ágeis na indústria de software requer práticas bem implementadas para garantir entregas confiáveis e de alta qualidade. Como Karhapää et al. (2024, https://doi.org/10.1016/j.jss.2024.01.003) argumentam, práticas inadequadas de controle de qualidade podem levar ao aumento de falhas, custos e atrasos nos projetos.
+
+---
 
 # Objetivo geral
 O objetivo geral a ser alcançado nesta pesquisa é avaliar o impacto de técnicas de controle de qualidade no desenvolvimento de software utilizando metodologias ágeis, analisando a sua eficácia em manter a qualidade e eficiência dos projetos.
@@ -23,15 +31,26 @@ Os objetivos específicos são:
 3. _Analisar se a adoção e eficácia das técnicas de controle de qualidade são influenciadas por características dos projetos, como tamanho da equipe, popularidade e complexidade do software_.
 
 # Materiais e Métodos
-As ferramentas, dados, métricas, forma de amostragem, e análise estatística são:
 
-* Projetos selecionados: Os projetos analisados são aqueles que utilizam metodologias ágeis e estão hospedados em plataformas como GitHub (https://github.com/). Um conjunto de 9 projetos com diferentes níveis de complexidade e popularidade será avaliado.
+1. **Tipo de pesquisa:**  
+   - Quantitativa e descritiva, investigando práticas de controle de qualidade em projetos que utilizam metodologias ágeis.  
 
-* Coleta de dados: Dados sobre commits, pull requests, code reviews e execução de testes automatizados serão coletados via API do GitHub (https://docs.github.com/en/rest?apiVersion=2022-11-28), além de logs de ferramentas de integração contínua como Jenkins e GitLab CI.
+2. **Materiais utilizados:**  
+   - **Repositórios do GitHub:** Projetos hospedados na plataforma GitHub (https://github.com/), com foco em metodologias ágeis.  
+   - **API do GitHub:** Coleta de dados como commits, pull requests e integrações contínuas via API do GitHub 
+   - **Ferramentas de análise estatística:** Análises conduzidas com base em métodos descritos por Karhapää et al. (2024, https://doi.org/10.1016/j.jss.2024.01.003) e Rahman e Roy (2017, https://doi.org/10.1016/j.infsof.2017.01.002).  
 
-* Métricas de controle de qualidade: Serão utilizadas métricas como Code Coverage (cobertura de testes automatizados), Mean Time to Detection (tempo médio para detecção de defeitos) e Code Review Time (tempo médio para aprovação de código), definidas em estudos relacionados.
+3. **Métodos empregados:**  
+   - **Correlação de Spearman:** Para medir relações entre práticas de controle de qualidade e métricas como densidade de defeitos (Smith e Jones, 2023, https://doi.org/10.1016/j.jss.2023.04.012).  
+   - **Regressão linear:** Para prever o impacto de técnicas de controle de qualidade na produtividade e qualidade do código (Karhapää et al., 2024, https://doi.org/10.1016/j.jss.2024.01.003).  
 
-* Análise dos grupos: Os projetos serão analisados em grupo com base nas métricas de qualidade (como cobertura de testes e tempo de revisão) e eficiência (como tempo de entrega e número de defeitos).
+4. **Métricas de avaliação:**  
+   - Frequência de commits;  
+   - Densidade de defeitos;  
+   - Tempo médio de aprovação de pull requests (Rahman e Roy, 2017, https://doi.org/10.1016/j.infsof.2017.01.002).  
 
-* Correlação de Spearman: Será medida entre a adoção de técnicas de controle de qualidade e a popularidade ou complexidade do projeto, além do impacto sobre a produtividade e qualidade do código.
-
+5. **Etapas de execução:**  
+   - **Seleção de repositórios:** Projetos selecionados com base no uso de metodologias ágeis e popularidade no GitHub (https://github.com/).  
+   - **Coleta de dados:** Via API do GitHub (https://docs.github.com/en/rest).  
+   - **Análises estatísticas:** Aplicação de correlação e regressão para medir o impacto das práticas de controle de qualidade.  
+   - **Interpretação dos resultados:** Redação de um relatório detalhando os achados com base nas métricas avaliadas.  
