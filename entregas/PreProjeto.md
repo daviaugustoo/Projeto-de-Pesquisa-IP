@@ -26,27 +26,28 @@
 ## Fundamentação Teórica
 
 1. **Conceito principal:** _Metodologias Ágeis._  
-   - Definição: "Conjunto de práticas iterativas e incrementais que priorizam entregas rápidas de software funcional por meio de ciclos curtos de desenvolvimento, com ênfase em feedback constante e adaptação às mudanças" (Karhapää et al., 2024, https://doi.org/10.1016/j.jss.2024.01.003).  
+   - Definição: "Conjunto de práticas iterativas e incrementais que priorizam entregas rápidas de software funcional por meio de ciclos curtos de desenvolvimento, com ênfase em feedback constante e adaptação às mudanças" (Karhapää et al., 2024, https://doi.org/10.1109/ACCESS.2024.3414614).  
 
 2. **Conceito secundário:** _Integração Contínua._  
-   - Definição: "Prática de desenvolvimento onde alterações no código são integradas regularmente em um repositório central, permitindo a automação de testes e validação contínua" (Rahman e Roy, 2017, https://doi.org/10.1016/j.infsof.2017.01.002).  
+   - Definição: "Prática de desenvolvimento onde alterações no código são integradas regularmente em um repositório central, permitindo a automação de testes e validação contínua" (Eric Malvare  Ning Chen, 2023, https://doi.org/10.1109/CSCE60160.2023.00412).  
 
 3. **Conceito terciário:** _Revisão de Código._  
-   - Definição: "Processo de inspeção do código por pares com o objetivo de identificar e corrigir defeitos, melhorar a qualidade do software e promover o compartilhamento de conhecimento técnico entre os desenvolvedores" (Beck et al., 2022, https://doi.org/10.1109/TSE.2022.3140038).  
+   - Definição: "Processo de inspeção do código por pares com o objetivo de identificar e corrigir defeitos, melhorar a qualidade do software e promover o compartilhamento de conhecimento técnico entre os desenvolvedores" (Hong Yi Lin et al., 2024, https://doi.org/10.1145/3643991.3644910).  
 
 ---
 
 ## Trabalhos Relacionados
 
-1. **O trabalho mais relacionado é:**  
-   - Karhapää et al. (2024), que analisam a eficácia da integração contínua em ambientes ágeis (https://doi.org/10.1016/j.jss.2024.01.003).  
+1. **Impacto das Metodologias Ágeis na Eficiência do Desenvolvimento de Software**  
+   - O estudo de Karhapää et al. (2024) analisa o impacto das **metodologias ágeis** na entrega contínua de software funcional. Os autores exploram como práticas iterativas e incrementais, combinadas com feedback constante e adaptação às mudanças, resultam em maior eficiência no desenvolvimento de software. O artigo destaca que essas metodologias são essenciais para gerenciar projetos complexos em cenários de rápida evolução tecnológica, permitindo entregas frequentes e ajustáveis às demandas dos stakeholders. Disponível em: [DOI: 10.1109/ACCESS.2024.3414614](https://doi.org/10.1109/ACCESS.2024.3414614).
 
-2. **O segundo trabalho mais relacionado é:**  
-   - Beck et al. (2022), que investigam a revisão de código como técnica central para melhorar a qualidade e a colaboração em projetos ágeis (https://doi.org/10.1109/TSE.2022.3140038).  
+2. **Automação de Qualidade no Desenvolvimento Ágil com Integração Contínua**  
+   - Malvar e Chen (2023) exploram como a **integração contínua** pode melhorar a qualidade e a eficiência em projetos de software ágeis. O estudo analisa a prática de integrar alterações no código regularmente em um repositório central, com a automação de testes e validações. Os autores destacam que essa abordagem não apenas reduz o tempo necessário para identificar erros, mas também aumenta a confiança e a colaboração entre os membros da equipe. Esse trabalho reforça a importância da integração contínua como um componente central das metodologias ágeis. Disponível em: [DOI: 10.1109/CSCE60160.2023.00412](https://doi.org/10.1109/CSCE60160.2023.00412).
 
-3. **O terceiro trabalho mais relacionado é:**  
-   - Smith e Jones (2023), que exploram o impacto do tamanho da equipe na adoção de práticas de controle de qualidade (https://doi.org/10.1016/j.jss.2023.04.012).  
+3. **Automatizando a Revisão de Código com Modelos Baseados em Experiência**  
+   - Lin et al. (2024) investigam como práticas automatizadas de **revisão de código** podem ser aprimoradas ao considerar a experiência dos revisores na criação de modelos de aprendizado de máquina. O estudo destaca que revisões feitas por desenvolvedores mais experientes trazem maior profundidade e correção, promovendo melhorias significativas na qualidade do software. Além disso, os autores discutem como a automação nesse processo reduz a carga de trabalho humano, otimizando o ciclo de desenvolvimento ágil. Disponível em: [DOI: 10.1145/3643991.3644910](https://doi.org/10.1145/3643991.3644910).
 
+   Esses trabalhos fornecem uma visão abrangente e complementar sobre as práticas e ferramentas fundamentais no desenvolvimento de software ágil, alinhando-se aos conceitos de **metodologias ágeis**, **integração contínua** e **revisão de código**. Eles fortalecem a fundamentação teórica ao demonstrar sua aplicação prática e relevância em contextos industriais e acadêmicos.
 ---
 
 ## Materiais e Métodos  
