@@ -74,3 +74,151 @@ Espera-se que os resultados deste trabalho forneçam uma visão prática e basea
    - _Coleta de dados via APIs:_ Utilização de APIs para acessar informações sobre os projetos selecionados, incluindo histórico de commits, aprovações de code reviews e integrações contínuas.  
    - _Análise estatística utilizando métricas definidas:_ Serão realizadas análises estatísticas para correlacionar as práticas de controle de qualidade com as métricas de desempenho do projeto.  
    - _Redação e apresentação dos resultados:_ Os resultados serão analisados, interpretados e apresentados em formato de relatório final.
+  
+
+Segue uma análise ampliada, abordando todos os projetos em cada métrica, detalhando suas características e possíveis interpretações:  
+
+---
+
+### **1. Commits por Desenvolvedor**  
+Esta métrica reflete a carga de trabalho individual e a distribuição de tarefas na equipe:  
+- **HospitalRun-Frontend (10.0):** O maior valor entre os projetos sugere uma equipe reduzida ou grande produtividade individual. Apesar disso, a ausência de defeitos (densidade de defeitos: 0.0) mostra um processo bem estruturado inicialmente, embora a taxa de defeitos pós-produção elevada (0.4) indique que ajustes significativos foram necessários após a entrega inicial.  
+- **Hexo (3.75):** Este valor mediano pode indicar uma equipe de tamanho moderado. A densidade de defeitos baixa (0.3) sugere que as práticas de controle de qualidade foram eficazes, mas o tempo médio de resolução elevado (268 dias) pode refletir gargalos na eficiência.  
+- **Minimal-Mistakes (3.33):** Um padrão similar ao do Hexo, com carga moderada por desenvolvedor. Apresenta baixa densidade de defeitos (0.333) e nenhuma refatoração pós-produção (0.0), sugerindo estabilidade no código produzido.  
+- **Insomnia (3.0):** Este projeto também apresenta carga equilibrada por desenvolvedor e uma densidade de defeitos moderada (0.733). A taxa de defeitos pós-produção muito baixa (0.033) sugere que os problemas foram bem resolvidos antes do lançamento.  
+- **Electron (3.0):** O comportamento é semelhante ao do Insomnia, mas com uma densidade de defeitos levemente menor (1.2). A taxa de defeitos pós-produção mais alta (0.267) indica um número considerável de ajustes após a entrega inicial.  
+- **Jitsi-Meet (2.73):** Este projeto tem uma carga individual ligeiramente menor que o Insomnia e apresenta densidade de defeitos moderada (0.633). Sua taxa de defeitos pós-produção (0.233) também é significativa, apontando para melhorias contínuas após o desenvolvimento inicial.  
+- **Vscode (1.87):** Apesar de uma carga menor por desenvolvedor, a densidade de defeitos (0.8) ainda é considerável. Isso pode indicar a necessidade de ajustes nas práticas de controle de qualidade.  
+- **Curriculum (1.43):** O menor número de commits por desenvolvedor reflete uma equipe maior, mas com uma densidade de defeitos preocupante (1.43), possivelmente devido à falta de processos eficientes de controle de qualidade.  
+
+---
+
+### **2. Tempo Médio de Resolução (dias)**  
+Essa métrica avalia a eficiência na resolução de problemas:  
+- **Vscode (0):** Apresenta o menor tempo médio de resolução, sugerindo um ciclo ágil e automatizado, possivelmente com integração contínua. Contudo, a densidade de defeitos (0.8) indica que a rapidez pode ter comprometido a qualidade.  
+- **Jitsi-Meet (8 dias):** Com tempo reduzido, o projeto demonstra eficiência no desenvolvimento, com densidade de defeitos moderada (0.633).  
+- **Insomnia e Electron (9 dias):** Ambos mostram eficiência similar em resolução de problemas e densidade de defeitos moderada, com o Insomnia apresentando menor taxa de defeitos pós-produção.  
+- **HospitalRun-Frontend e Curriculum (40 dias):** Este valor intermediário pode indicar que o tempo foi utilizado para resolução cuidadosa de problemas. No entanto, a densidade de defeitos do Curriculum (1.43) sugere ineficiências nas práticas.  
+- **Minimal-Mistakes (140 dias):** Um tempo relativamente alto, que parece ter sido compensado pela baixa densidade de defeitos (0.333).  
+- **Hexo (268 dias):** O tempo mais elevado entre os projetos indica ciclos longos, que coincidem com a densidade de defeitos mais baixa (0.3).  
+
+---
+
+### **3. Densidade dos Defeitos**  
+Esta métrica reflete a qualidade do código produzido:  
+- **HospitalRun-Frontend (0.0):** A ausência de defeitos indica uma abordagem de alta qualidade inicial, possivelmente devido ao uso de práticas automatizadas.  
+- **Hexo (0.3):** A densidade baixa reflete um processo robusto, mesmo com tempos longos de resolução.  
+- **Minimal-Mistakes (0.333):** Mostra estabilidade e bom controle de qualidade, aliado a um tempo moderado de resolução.  
+- **Insomnia (0.733):** Uma densidade moderada, indicando que os problemas não foram eliminados totalmente durante o desenvolvimento.  
+- **Jitsi-Meet (0.633) e Electron (1.2):** Ambos apresentam densidade significativa, sugerindo oportunidades para aprimoramento nas práticas de controle de qualidade.  
+- **Vscode (0.8):** Embora tenha um tempo de resolução muito baixo, a densidade de defeitos indica que mais cuidado seria necessário.  
+- **Curriculum (1.43):** A densidade mais alta entre os projetos aponta para práticas de controle de qualidade inadequadas.  
+
+---
+
+### **4. Taxa de Defeitos Pós-Produção**  
+Indica a frequência de refatorações após o desenvolvimento inicial:  
+- **Minimal-Mistakes (0.0):** Apresenta estabilidade máxima, com nenhum ajuste necessário após a entrega inicial.  
+- **Insomnia (0.033):** A taxa baixa sugere um controle de qualidade eficaz antes da entrega.  
+- **HospitalRun-Frontend (0.4):** A maior taxa entre os projetos, indicando que melhorias significativas foram realizadas após a entrega.  
+- **Hexo (0.333):** Ajustes moderados ocorreram após o desenvolvimento, possivelmente para otimizar a qualidade.  
+- **Electron (0.267) e Jitsi-Meet (0.233):** Mostram níveis similares de ajustes pós-produção, sinalizando esforços de refinamento contínuos.  
+- **Vscode (0.1):** Uma taxa relativamente baixa, mas ainda superior ao Insomnia e Minimal-Mistakes, indicando algumas refatorações necessárias.  
+- **Curriculum (0.066):** Apesar da alta densidade de defeitos, a taxa de refatorações foi baixa, sugerindo que os problemas identificados não foram suficientemente corrigidos.  
+
+---
+
+### **Conclusões Gerais**  
+1. **Relação Equipe x Qualidade:** Projetos com maior número de commits por desenvolvedor, como o HospitalRun-Frontend, demonstraram eficiência no controle de defeitos, mas alta dependência de ajustes pós-produção.  
+2. **Impacto do Tempo:** Tempos mais longos, como no Hexo e Minimal-Mistakes, resultaram em densidades de defeitos mais baixas, enquanto tempos curtos, como no Vscode, apresentaram densidade elevada.  
+3. **Aprimoramento Contínuo:** Projetos como Electron e Jitsi-Meet mostraram ajustes pós-produção moderados, indicando boas práticas de refinamento contínuo.  
+
+A análise sugere que o equilíbrio entre equipe, tempo e práticas de controle de qualidade é fundamental para alcançar resultados consistentes em ambientes ágeis. Posso complementar com visualizações gráficas para destacar essas relações de forma mais clara.
+A análise dos projetos pequenos, médios e grandes permite identificar padrões e relações específicas entre características organizacionais e práticas de controle de qualidade em diferentes escalas. Cada categoria de projeto revela insights sobre a influência de tamanho, comunidade e adoção de metodologias ágeis na qualidade do desenvolvimento.
+
+---
+
+#### **Projetos Pequenos**
+Os projetos pequenos, como o **Hexo**, **Minimal Mistakes** e **Simple-Blockchain**, têm em comum equipes reduzidas e menor complexidade. Apesar dessas semelhanças, diferenças nas práticas de controle de qualidade levam a resultados distintos:  
+- **Hexo:** Apesar de ser um gerador de sites estáticos popular com issues e pull requests (PRs) bem documentados, apresenta um dos tempos de resolução mais altos (268 dias). Essa característica pode estar associada ao uso de ciclos de desenvolvimento mais longos para mitigar defeitos, refletindo na densidade de defeitos baixa (0.3).  
+- **Minimal Mistakes:** Mesmo com uma equipe pequena, o projeto compensa limitações por meio de rigorosas revisões de código e integração contínua. Isso se reflete na baixa densidade de defeitos (0.333) e nenhuma taxa de defeitos pós-produção (0.0), demonstrando um controle de qualidade altamente eficaz.  
+- **Simple-Blockchain:** Embora não analisado nos dados apresentados, seria esperado que a simplicidade do projeto e o uso de testes unitários resultassem em métricas de qualidade semelhantes às do Minimal Mistakes, dada a similaridade nas práticas ágeis.
+
+---
+
+#### **Projetos Médios**
+Os projetos médios combinam maior complexidade com comunidades relativamente ativas, exigindo uma abordagem mais estruturada:  
+- **FreeCodeCamp Curriculum:** Este projeto utiliza CI/CD e Scrum com uma comunidade ativa. No entanto, os dados mostram uma densidade de defeitos alta (1.43) e taxa de refatoração moderada (0.066). Esses números podem indicar que, apesar das práticas formais, a grande quantidade de contribuidores gera desafios para manter a consistência na qualidade.  
+- **Insomnia:** O cliente REST API apresenta um equilíbrio interessante. Com um tempo médio de resolução de 9 dias e uma densidade de defeitos moderada (0.733), o projeto demonstra que práticas como Kanban e GitFlow ajudam a reduzir falhas. A taxa de defeitos pós-produção extremamente baixa (0.033) reforça a eficácia do processo de desenvolvimento inicial.  
+- **HospitalRun:** O projeto hospitalar, com 10 commits por desenvolvedor, reflete um cenário onde equipes menores mantêm alta produtividade. A ausência de densidade de defeitos (0.0) pode ser atribuída ao uso intensivo de testes automatizados e integração contínua. Contudo, a alta taxa de refatoração pós-produção (0.4) evidencia um foco maior em ajustes corretivos após o desenvolvimento inicial.
+
+---
+
+#### **Projetos Grandes**
+Os projetos grandes enfrentam desafios significativos devido à complexidade e à escala, mas também contam com recursos mais robustos para implementar práticas avançadas:  
+- **Jitsi Meet:** Utilizando Sprints e integração contínua, o Jitsi apresenta densidade de defeitos moderada (0.633) e taxa de refatoração significativa (0.233). Esses números indicam que, apesar da complexidade, o processo de desenvolvimento está bem controlado, mas melhorias podem ser feitas para reduzir ajustes pós-produção.  
+- **Electron:** Com uma base de contribuidores extensa, o Electron equilibra práticas avançadas de controle de qualidade, como testes automatizados, mas ainda apresenta densidade de defeitos alta (1.2) e taxa de refatoração elevada (0.267). Esses desafios refletem a dificuldade em manter consistência na qualidade em projetos colaborativos de larga escala.  
+- **VSCode:** O Visual Studio Code, com uma enorme base de contribuidores e uso extensivo de Scrum, revisões rigorosas e integração contínua, apresenta um tempo de resolução de 0 dias, indicando ciclos extremamente curtos. No entanto, a densidade de defeitos moderada (0.8) sugere que a rapidez pode ter comprometido a qualidade inicial, embora a taxa de refatoração seja baixa (0.1), indicando boa estabilidade do código entregue.
+
+---
+
+### **Relações Entre os Projetos**  
+1. **Complexidade e Tempo de Resolução:**  
+   - Projetos pequenos, como o Hexo e Minimal Mistakes, utilizam tempos mais longos de resolução para compensar limitações de equipe, resultando em menor densidade de defeitos. Em contraste, projetos grandes como o VSCode priorizam ciclos curtos, o que, embora aumente a densidade de defeitos, minimiza o tempo de ajuste pós-produção.  
+
+2. **Comunidade e Controle de Qualidade:**  
+   - Projetos com grandes comunidades, como o FreeCodeCamp Curriculum e Electron, enfrentam dificuldades em manter consistência na qualidade, refletidas em densidades de defeitos elevadas. Por outro lado, projetos médios e pequenos com equipes mais focadas, como Insomnia e Minimal Mistakes, apresentam maior controle sobre o processo e resultados mais consistentes.  
+
+3. **Práticas Ágeis e Eficácia:**  
+   - A adoção de práticas avançadas, como testes automatizados e CI/CD, demonstrou ser um fator-chave para reduzir densidade de defeitos em todos os tamanhos de projetos. No entanto, a qualidade final também depende de fatores contextuais, como a experiência dos desenvolvedores e o alinhamento entre a equipe e as práticas escolhidas.  
+
+---
+
+### **Direcionamentos Futuros**
+Esta análise sugere que o equilíbrio entre práticas ágeis, o tamanho da equipe e a complexidade do projeto é essencial para a qualidade do desenvolvimento. Projetos futuros podem se beneficiar de:  
+- Adaptações das práticas de controle de qualidade para escalar com a equipe e a comunidade.  
+- Investimento em automação e documentação clara para reduzir inconsistências em projetos grandes.  
+- Foco na redução do tempo de ajuste pós-produção em projetos médios e grandes, sem comprometer a qualidade inicial.  
+ 
+Os direcionamentos futuros visam traduzir as lições aprendidas em estratégias práticas que possam ser aplicadas em projetos ágeis de diversos tamanhos e complexidades. Os três pontos principais podem ser detalhados:
+
+---
+
+#### **1. Adaptações das Práticas de Controle de Qualidade para Escalar com a Equipe e a Comunidade**  
+Projetos de diferentes tamanhos enfrentam desafios distintos, exigindo uma abordagem personalizada para práticas de controle de qualidade.  
+- **Projetos Pequenos:**  
+  - Em projetos com equipes reduzidas, como o **Hexo** ou o **Minimal Mistakes**, a adoção de práticas como testes unitários e revisões de código detalhadas é crucial para compensar a limitação de recursos humanos. Além disso, ciclos de desenvolvimento mais longos, como os observados nesses projetos, devem ser mantidos para assegurar que cada iteração seja robusta antes da entrega final.  
+- **Projetos Médios:**  
+  - Projetos como o **Insomnia** e o **HospitalRun** podem se beneficiar de uma maior formalização no gerenciamento do fluxo de trabalho. Isso inclui uma implementação mais rigorosa de frameworks ágeis, como Kanban ou Scrum, para manter o alinhamento entre os membros da equipe e a priorização adequada de tarefas.  
+- **Projetos Grandes:**  
+  - Para projetos como o **VSCode** e o **Electron**, a principal dificuldade está em lidar com a coordenação de grandes comunidades de contribuidores. Nesse contexto, práticas como revisões automatizadas de PRs, padronização de estilo de código e utilização de bots para validação de builds podem ajudar a reduzir inconsistências e garantir a qualidade em larga escala.  
+
+---
+
+#### **2. Investimento em Automação e Documentação Clara para Projetos de Grande Escala**  
+Em projetos maiores, onde a complexidade aumenta proporcionalmente ao número de contribuidores, a automação e a documentação desempenham um papel essencial para assegurar a qualidade:  
+- **Automação:**  
+  - A adoção de pipelines de integração contínua avançados, com validações automatizadas de qualidade de código e execução de testes antes de cada merge, pode reduzir significativamente a densidade de defeitos. Por exemplo, o **VSCode**, com tempo de resolução praticamente zero, exemplifica o impacto positivo de pipelines bem estruturados.  
+  - Ferramentas de análise estática e testes de regressão automatizados são especialmente importantes em projetos como o **Electron** e o **Jitsi Meet**, onde falhas podem ter um impacto significativo na experiência do usuário.  
+- **Documentação:**  
+  - Manuais claros para contribuidores e guias detalhados para configuração de ambientes de desenvolvimento e testes podem minimizar barreiras de entrada para novos membros. Isso é essencial para projetos como o **FreeCodeCamp Curriculum**, cuja comunidade ativa pode enfrentar dificuldades devido à falta de padronização nos processos de controle de qualidade.  
+  - Esforços para unificar padrões de codificação e práticas em documentação centralizada ajudam a garantir que mesmo contribuições de membros casuais estejam alinhadas com os objetivos do projeto.  
+
+---
+
+#### **3. Redução do Tempo de Ajuste Pós-Produção Sem Comprometer a Qualidade Inicial**  
+Projetos que apresentam altas taxas de refatoração pós-produção, como o **HospitalRun** e o **Electron**, podem melhorar sua eficiência ao deslocar esforços de qualidade para fases mais iniciais do desenvolvimento:  
+- **Uso de Testes Automatizados:**  
+  - Implementação extensiva de testes unitários, de integração e de regressão no início do ciclo de desenvolvimento pode reduzir a necessidade de ajustes posteriores. Para o **HospitalRun**, o foco deve ser em expandir a cobertura de testes automatizados para diminuir o impacto das refatorações observadas após a entrega.  
+- **Priorização de Revisões de Código:**  
+  - Revisões de código mais rigorosas e orientadas a métricas podem prevenir problemas que só seriam detectados após o código estar em produção. Projetos como o **Jitsi Meet**, com altas taxas de defeitos pós-produção, devem investir em ferramentas que facilitem revisões colaborativas e detalhadas antes do merge de PRs.  
+- **Balanceamento entre Velocidade e Qualidade:**  
+  - Projetos que priorizam ciclos rápidos, como o **VSCode**, podem adotar práticas híbridas que combinem revisões automatizadas com revisões manuais em mudanças críticas, equilibrando agilidade e qualidade.  
+  - Para projetos médios e grandes, a implementação de “squads” focados em qualidade pode permitir que o controle seja mantido sem sacrificar a velocidade de entrega.  
+
+---
+
+### **Conclusão sobre Direcionamentos Futuros**  
+Esses direcionamentos oferecem estratégias aplicáveis e ajustáveis ao contexto de cada projeto. O foco em práticas adaptadas, automação robusta e mitigação de falhas em fases iniciais do ciclo de desenvolvimento pode ajudar equipes a otimizar o controle de qualidade, independentemente do tamanho e da complexidade do projeto.  
+
+Essas ações promovem não apenas resultados mais consistentes e eficientes, mas também criam uma base sustentável para o crescimento contínuo dos projetos, alinhando-os aos valores centrais das metodologias ágeis.
