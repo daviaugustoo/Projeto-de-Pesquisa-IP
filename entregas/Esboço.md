@@ -16,7 +16,7 @@ O problema que este trabalho busca resolver é:
 2. _As técnicas como integração contínua, revisão de código e testes automatizados são eficazes em melhorar a qualidade do código e a produtividade das equipes?_
 3. _Características como tamanho da equipe e complexidade do projeto influenciam a adoção e eficácia dessas práticas?_
 
-Resolver este problema é relevante porque a adoção de metodologias ágeis na indústria de software requer práticas bem implementadas para garantir entregas confiáveis e de alta qualidade. Como Karhapää et al. (2024, https://doi.org/10.1016/j.jss.2024.01.003) argumentam, práticas inadequadas de controle de qualidade podem levar ao aumento de falhas, custos e atrasos nos projetos.
+Resolver este problema é relevante porque a adoção de metodologias ágeis na indústria de software requer práticas bem implementadas para garantir entregas confiáveis e de alta qualidade. Práticas inadequadas de controle de qualidade podem levar ao aumento de falhas, custos e atrasos nos projetos.
 
 ---
 
@@ -38,19 +38,19 @@ Os objetivos específicos são:
 2. **Materiais utilizados:**  
    - **Repositórios do GitHub:** Projetos hospedados na plataforma GitHub (https://github.com/), com foco em metodologias ágeis.  
    - **API do GitHub:** Coleta de dados como commits, pull requests e integrações contínuas via API do GitHub 
-   - **Ferramentas de análise estatística:** Análises conduzidas com base em métodos descritos por Karhapää et al. (2024, https://doi.org/10.1016/j.jss.2024.01.003) e Rahman e Roy (2017, https://doi.org/10.1016/j.infsof.2017.01.002).  
+   - **Ferramentas de análise estatística:** Análises conduzidas com base nos dados obtidos.  
 
 3. **Métodos empregados:**  
-   - **Correlação de Spearman:** Para medir relações entre práticas de controle de qualidade e métricas como densidade de defeitos (Smith e Jones, 2023, https://doi.org/10.1016/j.jss.2023.04.012).  
-   - **Regressão linear:** Para prever o impacto de técnicas de controle de qualidade na produtividade e qualidade do código (Karhapää et al., 2024, https://doi.org/10.1016/j.jss.2024.01.003).  
+ - **Método de amostragem:** Seleção de projetos de diferentes tamanhos, complexidades e com adoção de diversas práticas de controle de qualidade.
+ - **Método de análise de correlação:** Será utilizado para medir o impacto das práticas de controle de qualidade nas métricas de desempenho do projeto, como a frequência de commits, tempo médio de aprovação de code reviews e outros fatores.
 
 4. **Métricas de avaliação:**  
    - Frequência de commits;  
    - Densidade de defeitos;  
-   - Tempo médio de aprovação de pull requests (Rahman e Roy, 2017, https://doi.org/10.1016/j.infsof.2017.01.002).  
+   - Tempo médio de aprovação de pull requests.  
 
 5. **Etapas de execução:**  
    - **Seleção de repositórios:** Projetos selecionados com base no uso de metodologias ágeis e popularidade no GitHub (https://github.com/).  
-   - **Coleta de dados:** Via API do GitHub (https://docs.github.com/en/rest).  
+   - **Coleta de dados:** Via API do GitHub.
    - **Análises estatísticas:** Aplicação de correlação e regressão para medir o impacto das práticas de controle de qualidade.  
    - **Interpretação dos resultados:** Redação de um relatório detalhando os achados com base nas métricas avaliadas.  
