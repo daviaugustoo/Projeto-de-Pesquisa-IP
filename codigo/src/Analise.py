@@ -18,14 +18,12 @@ def calcular_metricas_por_arquivo():
     # Lista para armazenar os resultados por arquivo
     resultados_por_arquivo = []
 
-    def calculate_defect_post_production_rate(file_path):
+    def calculate_density_of_defects(file_path):
         data = pd.read_csv(file_path)
         total_commits = len(data)
         data['message'] = data['message'].fillna('')  # Preenche valores nulos com string vazia
-        refactor_count = data['message'].str.count('refactor', flags=re.IGNORECASE).sum()
-        chore_count = data['message'].str.count('chore', flags=re.IGNORECASE).sum()
-        total_defects = refactor_count + chore_count
-        return total_defects / total_commits if total_commits > 0 else 0
+        Fix_count = data['message'].str.count('Fix', flags=re.IGNORECASE).sum()
+        return Fix_count / total_commits if total_commits > 0 else 0
 
     # Percorre todos os arquivos CSV no diretório
     for arquivo in os.listdir(diretorio):
@@ -59,7 +57,7 @@ def calcular_metricas_por_arquivo():
             # Calcula as métricas para este arquivo
             comits_por_desenvolvedor = total_comits / total_desenvolvedores if total_desenvolvedores else 0
             tempo_medio_resolucao = duracao_projeto  # Cada arquivo é tratado como um projeto único
-            densidade_defeitos = calculate_defect_post_production_rate(caminho_arquivo)  # Caminho do arquivo CSV
+            densidade_defeitos = calculate_density_of_defects(caminho_arquivo)  # Caminho do arquivo CSV
             taxa_defeitos_pos_producao = total_tags_refatoracao / total_comits if total_comits else 0
 
             # Adiciona os resultados à lista
@@ -75,7 +73,7 @@ def calcular_metricas_por_arquivo():
     tabela_resultados = pd.DataFrame(resultados_por_arquivo)
 
     # Exibe a tabela no console
-    print("Tabela Consolidada de Métricas:")
+    print("Tabela Consolidada de Metricas:")
     print(tabela_resultados)
 
     # Exporta para um arquivo CSV
