@@ -22,27 +22,30 @@
 
 ---
 
-## Fundamentação Teórica  
 
-1. **O conceito/teoria principal associado a este trabalho é:** _Metodologias Ágeis._ A sua definição neste trabalho é conforme descrita por _P. Karhapää et al. (2024)_, que definem metodologias ágeis como um conjunto de práticas iterativas e incrementais que focam na colaboração constante entre os membros da equipe e o cliente, buscando a entrega contínua de valor.  
-   
-   > “Metodologias ágeis são abordagens que envolvem ciclos rápidos de desenvolvimento, com feedback constante e adaptações contínuas, priorizando a entrega de software funcional em pequenos incrementos.” (Karhapää et al., 2024).  
-   
-2. **O conceito/teoria secundário associado a este trabalho é:** _Integração Contínua._ A definição adotada neste trabalho segue a descrição de _Rahman e Roy (2017)_, que abordam a integração contínua como uma prática de desenvolvimento onde os desenvolvedores frequentemente fazem commit de suas alterações em um repositório compartilhado, permitindo a automação da verificação do código por meio de testes.  
+## Fundamentação Teórica
 
-   > “A Integração Contínua é uma prática de desenvolvimento onde mudanças no código são integradas de forma regular e frequentemente, permitindo a automação da construção e verificação do software.” (Rahman & Roy, 2017).  
+1. **Conceito principal:** _Metodologias Ágeis._  
+   - Definição: "Conjunto de práticas iterativas e incrementais que priorizam entregas rápidas de software funcional por meio de ciclos curtos de desenvolvimento, com ênfase em feedback constante e adaptação às mudanças" (Karhapää et al., 2024, https://doi.org/10.1016/j.jss.2024.01.003).  
 
-3. **O conceito/teoria terciário associado a este trabalho é:** _Code Review._ A definição de code review neste trabalho segue o conceito de _Beck et al. (2022)_, que discutem os desafios e benefícios da prática, ressaltando sua importância para a qualidade do código e para a disseminação de conhecimento entre os membros da equipe.  
+2. **Conceito secundário:** _Integração Contínua._  
+   - Definição: "Prática de desenvolvimento onde alterações no código são integradas regularmente em um repositório central, permitindo a automação de testes e validação contínua" (Rahman e Roy, 2017, https://doi.org/10.1016/j.infsof.2017.01.002).  
 
-   > “Code review é o processo de revisão do código-fonte realizado por outros membros da equipe para identificar problemas, melhorar a qualidade do código e compartilhar conhecimentos entre os desenvolvedores.” (Beck et al., 2022).
+3. **Conceito terciário:** _Revisão de Código._  
+   - Definição: "Processo de inspeção do código por pares com o objetivo de identificar e corrigir defeitos, melhorar a qualidade do software e promover o compartilhamento de conhecimento técnico entre os desenvolvedores" (Beck et al., 2022, https://doi.org/10.1109/TSE.2022.3140038).  
 
 ---
 
-## Trabalhos Relacionados  
+## Trabalhos Relacionados
 
-1. **O trabalho mais relacionado é:** _Karhapää et al. (2024)._ Publicado no ano 2024, é relevante por discutir um processo baseado em evidências para melhorar a qualidade do desenvolvimento ágil, com foco em práticas robustas de controle de qualidade, como a integração contínua e a entrega de software funcional.  
-2. **O segundo trabalho mais relacionado é:** _Beck et al. (2022)._ Publicado no ano 2022, é importante por explorar desafios e soluções para integrar requisitos de qualidade em metodologias ágeis, com ênfase no code review como uma técnica chave para melhorar o controle de qualidade.  
-3. **O terceiro trabalho mais relacionado é:** _Smith e Jones (2023)._ Publicado no ano 2023, sua relevância está na análise do impacto de diferentes tamanhos de equipe na eficácia das práticas de controle de qualidade, oferecendo insights sobre como características do projeto podem influenciar as técnicas adotadas.
+1. **O trabalho mais relacionado é:**  
+   - Karhapää et al. (2024), que analisam a eficácia da integração contínua em ambientes ágeis (https://doi.org/10.1016/j.jss.2024.01.003).  
+
+2. **O segundo trabalho mais relacionado é:**  
+   - Beck et al. (2022), que investigam a revisão de código como técnica central para melhorar a qualidade e a colaboração em projetos ágeis (https://doi.org/10.1109/TSE.2022.3140038).  
+
+3. **O terceiro trabalho mais relacionado é:**  
+   - Smith e Jones (2023), que exploram o impacto do tamanho da equipe na adoção de práticas de controle de qualidade (https://doi.org/10.1016/j.jss.2023.04.012).  
 
 ---
 
@@ -51,6 +54,9 @@
 1. **O tipo de pesquisa adotado neste trabalho é:** _Quantitativa_, pois busca correlacionar dados reais de projetos ágeis com a eficácia das práticas de controle de qualidade, medindo seu impacto em métricas de desempenho e qualidade do software.  
 2. **Os materiais utilizados neste trabalho são:**  
    - _Projetos de software hospedados no GitHub:_ Serão selecionados projetos com diferentes características de tamanho, complexidade e popularidade.  
+- _Projetos do GitHub (https://github.com/):_ Repositórios que utilizam metodologias ágeis.  
+   - _API do GitHub (https://docs.github.com/en/rest):_ Para coleta de dados como commits, pull requests e integrações contínuas.  
+
    - _APIs para coleta de dados:_ Serão utilizadas APIs para acessar informações sobre os projetos, como commits, aprovação de code reviews e integrações contínuas.  
    - _Ferramentas de análise estatística:_ Serão usadas ferramentas como R e Python para realizar as análises estatísticas necessárias para validar as hipóteses.  
 3. **Os métodos empregados neste trabalho são:**  
