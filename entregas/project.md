@@ -52,17 +52,25 @@ A revisão de código é uma prática que assegura a qualidade do software e pro
 ### **Importância das Métricas**  
 Métricas como densidade de defeitos, frequência de commits e taxa de refatoração são amplamente utilizadas para avaliar a eficácia das práticas ágeis. Smith e Jones (2023) analisam como diferentes tamanhos de equipe impactam essas métricas, oferecendo insights valiosos para ajustar práticas de controle de qualidade de acordo com o contexto do projeto.
 
----
-
 ## Trabalhos Relacionados  
 
-1. **O trabalho mais relacionado é:** _Karhapää et al. (2024)._ Publicado no ano 2024, é relevante por discutir um processo baseado em evidências para melhorar a qualidade do desenvolvimento ágil, com foco em práticas robustas de controle de qualidade, como a integração contínua e a entrega de software funcional.  
-2. **O segundo trabalho mais relacionado é:** _Beck et al. (2022)._ Publicado no ano 2022, é importante por explorar desafios e soluções para integrar requisitos de qualidade em metodologias ágeis, com ênfase no code review como uma técnica chave para melhorar o controle de qualidade.  
-3. **O terceiro trabalho mais relacionado é:** _Smith e Jones (2023)._ Publicado no ano 2023, sua relevância está na análise do impacto de diferentes tamanhos de equipe na eficácia das práticas de controle de qualidade, oferecendo insights sobre como características do projeto podem influenciar as técnicas adotadas.
+1. **O trabalho mais relacionado é:**  
+   O trabalho de Karhapää et al. (2024) é relevante por apresentar um processo baseado em evidências para integrar práticas robustas de controle de qualidade em projetos ágeis. A pesquisa destaca como a integração contínua e a entrega de software funcional podem melhorar a qualidade e a confiabilidade do software em ciclos iterativos. Esses aspectos fornecem uma base para a análise de impacto das técnicas de controle de qualidade adotadas em projetos de diferentes escalas.  
 
----
+   Essa abordagem está diretamente relacionada ao problema investigado neste estudo, que busca avaliar como práticas de controle de qualidade afetam a eficiência e a eficácia em ambientes ágeis. Ao analisar a integração contínua como ferramenta essencial, este trabalho reforça a importância de práticas estruturadas para evitar a degradação da qualidade em ciclos curtos de desenvolvimento. Conforme Karhapää et al. (2024), "a aplicação sistemática de práticas de controle de qualidade baseadas em evidências é fundamental para o sucesso em ambientes ágeis."  
 
-## Materiais e Métodos  
+2. **O segundo trabalho mais relacionado é:**  
+   O estudo de Beck et al. (2022) é importante por explorar os desafios e soluções para integrar requisitos de qualidade no contexto de metodologias ágeis. Em especial, o trabalho enfatiza a revisão de código como técnica central para reduzir defeitos e promover o compartilhamento de conhecimento entre os membros da equipe, destacando sua eficácia em equipes pequenas e médias.  
+
+   Essa investigação contribui diretamente para os objetivos deste trabalho, que inclui a comparação de técnicas como revisão de código e testes automatizados em relação às métricas de densidade de defeitos e produtividade. A revisão de código, como discutido por Beck et al. (2022), é uma prática que não apenas melhora a qualidade do software, mas também alinha-se ao princípio ágil de colaboração contínua entre os desenvolvedores: "O processo de revisão é um mecanismo crítico para prevenir erros e aumentar a coesão das equipes ágeis."  
+
+3. **O terceiro trabalho mais relacionado é:**  
+   O trabalho de Smith e Jones (2023) é relevante por analisar como o tamanho das equipes de desenvolvimento impacta a eficácia das práticas de controle de qualidade. Os autores concluem que equipes menores enfrentam maior densidade de defeitos em fases iniciais, mas conseguem alcançar melhor controle ao longo do tempo devido à maior flexibilidade na adaptação de práticas ágeis.  
+
+   Essas conclusões são diretamente relacionadas ao problema investigado, que considera como características como tamanho da equipe e complexidade do projeto influenciam a eficácia das técnicas de controle de qualidade. Smith e Jones (2023) fornecem insights que fundamentam a análise sobre a influência de fatores contextuais no desempenho das equipes: "A relação entre o tamanho da equipe e a densidade de defeitos é uma variável crítica para determinar a eficácia das práticas ágeis de controle de qualidade."  
+
+--- 
+ 
 ## **Materiais e Métodos**
 
 ### **Tipo de Pesquisa**  
